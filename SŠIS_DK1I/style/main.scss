@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.top-bar{
+    width: 100%;
+    height: 60px;
+    background-color: #1373c2;
+    h1{
+        margin: 0;
+        color: white;
+        padding: 10px;
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+.list-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #474d51; 
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #131414; 
+}
+
+section{
+    width: 100%;
+    height: 1200px;
+    background-image: url("../images/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+#section-wrapper{
+    background-color: #212324b6;
+    width: 100%;
+    height: 1200px;
+}
+
+.switch-bar{
+    width: 100%;
+    .button{
+        display: block;
+        float: left;
+        text-decoration: none;
+        text-align: center;
+        color: white;
+        width: 150px;
+        height: 25px;
+        margin: 0 5px 0 0;
+        background-color: #1373c2;
+        border-radius: 5px 5px 0 0;
+    }
+}
+.fas{
+    padding: 0 5px 0 0;
+}
+.main-box{
+    width: 100%;
+    min-height: 500px;
+    transform: translate(0,50%);
+    color: white;
+    font-size: 20px;
+    .content-container{
+        display: flex;
+        flex-flow: wrap-reverse;
+    }
+    .leftpanel{
+        width: 65%;
+        float: left;
+        padding: 0 50px 50px 50px;
+    }
+    #list{
+        display: none;
+        .list-container{
+            *{
+                margin: 0;
+            }
+            overflow-y: scroll;
+            overflow-x: hidden;
+            height: 500px;
+        }
+        .list-item{
+            width: 100%;
+            height: 100px;
+            padding: 20px;
+            background-color: #1373c2;
+            transition: 0.5s;
+        }
+        .list-item:hover{
+            background-color: #0960a7;
+            transition: 0.5s;
+        }
+    }
+    #info-panel{
+        padding: 0 20px 20px 20px;
+        float: left;
+        width: 35%;
+    }
+    .city{
+        display: flex;
+        p{
+            margin: 15px 0 0 0;
+        }
+        .city-name{
+            margin-right:  125px
+        }
+    }
+    .adress{
+        display: flex;
+        p{
+            margin: 15px 0 0 0;
+        }
+        .street{
+            margin-right:  125px
+        }
+    }
+    .contact{
+        margin: 150px 0 0 0;
+    }
+}
+
+
+@media(max-width: 1200px){
+    section{
+        .main-box{
+            transform: translate(0,0);
+            .leftpanel{
+                width: 100%;
+                padding: 15px;
+            }
+            #info-panel{
+                width: 100%;
+                .article-wrapper{
+                    width: 80%;
+                    margin: auto;
+                }
+            } 
+            .basic-info{
+                width: 50%;
+                float: left;
+                padding: 20px;
+            }
+            .contact{
+                margin: 0;
+                float: left;
+                width: 50%;
+                padding: 20px;
+            }
+        }
+    }
+}
+
+@media(max-width: 800px){
+    section{
+        .main-box{
+            .basic-info{
+                width: 100%;
+                float: none;
+                padding: 20px;
+            }
+            #info-panel{
+                .article-wrapper{
+                    width: 60%;
+                    margin: auto;
+                }
+            }
+            .contact{
+                margin: 100px 0 0 0;
+                float: none;
+                width: 100%;
+                padding: 20px;
+            }
+        }
+    } 
+}
+@media(max-width: 560px){
+    section{
+        .main-box{
+            .leftpanel{
+                width: 100%;
+                padding: 15px;
+                .mapouter{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+            .basic-info{
+                width: 100%;
+                float: none;
+            }
+            #info-panel{
+                padding: 0px;
+                .article-wrapper{
+                    width: 100%;
+                    margin: auto;
+                    padding: 10px;
+                }
+            }
+        }
+    } 
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    height: 50px;
+    background-color: #1373c2;
+    color: white;
+}
+

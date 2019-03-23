@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: helvetica;
+    color: rgba(0, 0, 0, .8)
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.container {
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 50px;
+}
+
+.header .logo {
+    text-decoration: none;
+    color: #fff;
+}
+
+.tip {
+    background-color: rgb(219, 226, 255);
+    padding: 10px;
+}
+
+code {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 5px;
+    display: block;
+    text-align: left;
+}
+
+code .tab {
+    padding-left: 2em;
+}
+
+code label {
+    display: block;
+    margin: -6px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    font-family: helvetica;
+    font-size: 14px;
+}
+
+code b {
+    color: red;
+}
+
+kbd {
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    border-radius: 3px;
+    padding: 0 4px;
+    font-weight: bold;
+}
+
+.file {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.file::before {
+    content: '📂';
+}
+
+p {
+    margin: 20px 0;
+}

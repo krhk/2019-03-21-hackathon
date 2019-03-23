@@ -1,0 +1,19 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+
+}
+
+.main-title {
+    font-family: 'Baloo', cursive;
+    font-size: 25px;
+    color: #FF9800;
+    margin-bottom: 20px;
+}
+
+.main-title a {
+    text-decoration: none;
+    color: inherit;
+}

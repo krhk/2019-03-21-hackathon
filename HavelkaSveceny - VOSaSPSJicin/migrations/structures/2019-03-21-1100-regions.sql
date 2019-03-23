@@ -1,0 +1,7 @@
+CREATE TABLE `regions` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`name` VARCHAR(100) NOT NULL,
+	`slug` VARCHAR(100) NOT NULL,
+	UNIQUE INDEX `slug` (`slug`),
+	PRIMARY KEY (`id`)
+);

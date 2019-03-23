@@ -1,0 +1,56 @@
+﻿@model IEnumerable<Hackathon2.Models.Emergency>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2 class="title is-4">Celkem <b class="has-text-info">@ViewData["Count"]</b> pohotovostí v Královéhradeckém Kraji</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Group)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OkresName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ObecName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ProviderName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Group)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OkresName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ObecName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ProviderName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Address)
+            </td>
+            <td>
+                <a asp-action="Details" asp-route-id="@item.Id" class="button is-info">Zobrazit více</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

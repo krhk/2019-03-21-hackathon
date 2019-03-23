@@ -1,0 +1,11 @@
+services:
+	# Router
+	routing.router: App\Factories\RouterFactory::create
+
+	# Parameter provider
+	- App\Models\Parameters
+
+	# Commands
+	- App\Models\Console\RegionBuildCommand
+	- App\Models\Console\BranchesBuildCommand
+	- App\Models\Console\SchoolsBuildCommand

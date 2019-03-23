@@ -1,0 +1,20 @@
+h1{
+    font-size: 40px;
+}
+.obal-graf{
+        border-left: 2px solid white;
+        padding-left: 15px;
+        width: 35%;
+        height: 300px;
+        margin-top: 100px;
+        display: inline-block;
+}
+.right{
+    float:right;
+}
+.popisekJedna{
+    padding-top: 35px;
+}
+p{
+    padding-top: 5px;
+}

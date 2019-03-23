@@ -1,0 +1,8 @@
+includes:
+	- vendor/phpstan/phpstan-nette/extension.neon
+	- vendor/phpstan/phpstan-nette/rules.neon
+	- vendor/nextras/orm-phpstan/extension.neon
+
+parameters:
+	ignoreErrors:
+		- "#Cannot call method render() on Nette\\Bridges\\ApplicationLatte\\Template|stdClass.#"

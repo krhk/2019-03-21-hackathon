@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/detail_page.css">
+    <link rel="stylesheet" href="assets/Chart.min.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="assets/dist/Chart.js"> </script>
+
+
+    <title>Document</title>
+</head>
+<body>
+<div class="Obal nelze_vybrat">
+<h1>Název města</h1>
+<div class="obal-graf">
+<h2>Rozdělení obyvatel města</h2>
+    <canvas id="prostorProGraf" width="400" height="200">
+    </canvas>
+</div>
+<div class="obal-graf right">
+        <h2>Služby na počet lidí</h2>
+<p class="popisekJedna">
+    Na <b>!200!</b> lidí ve věku <b>0-14</b> se v tomto městě nachází <b>!2!</b> škol.
+</p>
+<p>
+        Na <b>!200!</b> lidí ve věku <b>15-64</b> se v tomto městě nachází <b>!5!</b> zábavních podniků.
+</p>
+<p>
+        Na <b>!200!</b> lidí ve věku <b>65+</b> se v tomto městě nachází <b>!2!</b> nemocnic a <b> !5!</b> sociálních zařízení.
+</p>
+
+</div>
+
+
+<p id="CelkemPocet"></p>
+</div>
+<script src="assets/grafObyvatel.js"></script>
+    
+
+</body>
+</html>

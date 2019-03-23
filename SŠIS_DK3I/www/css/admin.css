@@ -1,0 +1,14 @@
+footer {
+  position: absolute;
+  margin: 0px!important;
+  bottom: 0;
+}
+body {
+      min-height: 100vh;
+}
+#main-content{
+  padding-top: 20vh;
+}
+.list-group-item{
+  cursor: pointer;
+}

@@ -1,0 +1,102 @@
+#body {}
+
+#mainCont {
+
+    margin: 0px;
+    padding: 0px;    
+    background: #efefef;
+}
+
+#dataCont {
+    height: 3000px;
+    width: 60%;
+    background: #efefef;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.carousel-item > img {
+    height: 400px !important;
+}
+
+
+#searchButton {
+    background: #00bcd4;
+    transition-duration: .3s;
+}
+
+#searchButton:hover {
+    background: #008b9d;
+    transition-duration: .5s;
+}
+
+#mainCont > #carouselExampleIndicators {}
+
+#mainCont > #carouselExampleIndicators {
+    height: 800px !important;
+}
+.carousel-item>.carousel-caption{
+    top: 20vh;
+}
+
+.carousel-caption > h5 {
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: ghostwhite;
+}
+
+.container > .zprava {
+    background: white;
+    height: 120px;
+    width: 100%;
+    border: solid 1px #cccccc;
+    border-top: none;
+    transition-duration: .2s;
+    padding: 10px;
+
+}
+.container > .zprava > .info{
+    float: right;
+    height: 100%;
+    width: 15%;
+    margin-top: 8px;
+    font-size: 20px;
+    text-align: center;
+        color: #00bcd4;
+
+}
+.zprava:hover {
+    background: #efefef;
+    transition-duration: .2s;
+}
+
+.zprava > h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    width: 84%;
+    margin: 0px;
+    float: left;
+    color: #00bcd4;
+}
+
+.zprava > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+        width: 84%;
+    margin: 0px;
+        float: left;
+
+    
+
+}
+
+
+
+
+
+
+
+.carousel-inner > .carousel

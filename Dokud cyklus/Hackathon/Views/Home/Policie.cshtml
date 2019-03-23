@@ -1,0 +1,78 @@
+﻿@model IEnumerable<Hackathon.Models.Policie>
+
+@{
+    ViewData["Title"] = "Policie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Policie</h1>
+
+<table class="table" id="table">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayNameFor(model => model.NazevOkresu)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ulice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CisloPopisne)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mesto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefon)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NazevOkresu)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Ulice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CisloPopisne)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mesto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefon)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts
+    {
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#table').DataTable({ "renderer": "bootstrap" });
+        });
+    </script>
+}
+
+
+@section Styles
+    {
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css">
+}

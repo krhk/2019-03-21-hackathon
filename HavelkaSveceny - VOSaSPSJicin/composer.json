@@ -1,0 +1,58 @@
+{
+	"name": "sitole/hackathon",
+	"authors": [
+		{
+			"name": "Jiří Svěcený",
+			"homepage": "https://sitole.cz"
+		},
+		{
+			"name": "Jakub Havelka",
+			"homepage": "https://havelka.net"
+		}
+	],
+	"type": "project",
+	"require": {
+		"php": ">= 7.2",
+		"ext-calendar": "*",
+		"ext-json": "*",
+		"ext-xml": "*",
+
+		"nette/application": "^3.0",
+		"nette/bootstrap": "^3.0",
+		"nette/caching": "^3.0",
+		"nette/di": "^3.0",
+		"nette/forms": "^3.0",
+		"nette/http": "^3.0",
+		"nette/mail": "^3.0",
+		"nette/security": "^3.0",
+		"nette/utils": "^3.0",
+		"latte/latte": "^3.0",
+		"tracy/tracy": "^2.6",
+
+		"nextras/migrations": "^3.0",
+		"nextras/orm": "^3.1",
+
+		"contributte/console": "^0.5",
+		"parsecsv/php-parsecsv": "^1.1",
+		"symfony/dom-crawler": "^4.2",
+		"symfony/css-selector": "^4.2",
+		"ext-simplexml": "*",
+		"shuchkin/simplexlsx": "^0.8.5"
+	},
+	"require-dev": {
+		"phpstan/phpstan-nette": "^0.11",
+		"nextras/orm-phpstan": "^0.3"
+	},
+	"autoload": {
+		"psr-4": {
+			"App\\": "app"
+		}
+	},
+	"minimum-stability": "dev",
+	"prefer-stable": true,
+	"scripts": {
+		"phpstan": [
+			"vendor/bin/phpstan analyse app -c phpstan.neon --level 6 --no-progress"
+		]
+	}
+}

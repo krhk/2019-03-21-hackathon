@@ -1,0 +1,76 @@
+﻿@model Hackathon2.Models.Emergency
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2 class="title is-info" style="text-transform: capitalize">@Html.DisplayFor(model => model.Type)</h2>
+<h3 class=""></h3>
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OkresCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OkresCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OkresName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OkresName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ObecCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObecCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ObecName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObecName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProviderName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddressCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpenHours)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index" class="button is-info detail-button">Zpátky na seznam</a>
+</div>

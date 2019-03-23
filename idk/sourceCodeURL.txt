@@ -1,0 +1,5 @@
+Kód:
+https://github.com/DEXIT33/hackathon-hk-2019
+
+Hotová stránka:
+https://hackathon-hk-2019.firebaseapp.com

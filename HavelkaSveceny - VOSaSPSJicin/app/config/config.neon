@@ -1,0 +1,66 @@
+# Include external config files
+includes:
+	- application/services.neon
+	- application/factories.neon
+
+php:
+	date.timezone: Europe/Prague
+
+session:
+	expiration: 14 days
+	savePath: '%tempDir%/sessions'
+
+application:
+	errorPresenter: Error
+	scanDirs: off
+	mapping:
+		*: [App, Modules\*, Presenters\*\*Presenter]
+
+tracy:
+	fromEmail: mailer@sitole.cz
+	email: sveceny@sitole.cz
+	strictMode: true
+
+# Database layer
+dbal:
+	driver: 'mysqli'
+	host: %database.host%
+	database: %database.database%
+	connectionTz: %database.zone%
+	username: %database.username%
+	password: %database.password%
+	port: %database.port%
+
+
+# Mail configuration
+mail:
+	smtp: true
+	persistent: true
+	host: %mail.host%
+	username: %mail.username%
+	password: %mail.password%
+	secure: %mail.secure%
+	port: %mail.port%
+
+# Console configuration
+console:
+	name: Hackathon
+	autoExit: true
+
+decorator:
+	Nextras\Orm\Repository\IRepository:
+		inject: on
+
+orm:
+	model: App\Models\Database\DatabaseModel
+
+migrations:
+	dir: %appDir%/../migrations
+	driver: mysql
+	dbal: nextras
+
+extensions:
+	migrations: Nextras\Migrations\Bridges\NetteDI\MigrationsExtension
+	console: Contributte\Console\DI\ConsoleExtension(%consoleMode%)
+	dbal: Nextras\Dbal\Bridges\NetteDI\DbalExtension
+	orm: Nextras\Orm\Bridges\NetteDI\OrmExtension

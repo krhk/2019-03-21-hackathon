@@ -1,0 +1,13 @@
+{
+    "switch": [
+        {"url": "", "layout": "layout/main/template.php", "file": "page/home.php", "title": "Home"},
+        {"url": "map1", "layout": "layout/map/template.php", "file": "page/map1.php", "title": "Mapa"},
+        {"url": "map2", "layout": "layout/map/template.php", "file": "page/map2.php", "title": "Mapa"},
+        {"url": "map3", "layout": "layout/map/template.php", "file": "page/map3.php", "title": "Mapa"}
+
+    ],
+
+    "alike": [
+        {"from": "home", "to": ""}
+    ]
+}

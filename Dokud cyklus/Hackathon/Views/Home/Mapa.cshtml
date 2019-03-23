@@ -1,0 +1,153 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body>
+    <div class="row">
+        <div class="col-lg-8">
+            <div id="m" style="height:50%; width:auto;"></div>
+            <label for="sel1">Select list (select one):</label>
+<div id="controls">
+<select class="form-control" id="sel1">
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+</select>
+</div>
+        </div>
+            <div class="col-lg-4" id="htmlInfo">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce suscipit libero eget elit. Suspendisse sagittis ultrices augue. Nullam dapibus fermentum ipsum. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Donec quis nibh at felis congue commodo. Vestibulum fermentum tortor id mi. Quisque tincidunt scelerisque libero. Vivamus luctus egestas leo. Fusce nibh. Sed elit dui, pellentesque a, faucibus vel, interdum nec, diam. Aenean id metus id velit ullamcorper pulvinar. Nulla turpis magna, cursus sit amet, suscipit a, interdum id, felis. Nam quis nulla. Nullam lectus justo, vulputate eget mollis sed, tempor sed magna. Maecenas fermentum, sem in pharetra pellentesque, velit turpis volutpat ante, in pharetra metus odio a lectus. Aliquam erat volutpat. Integer vulputate sem a nibh rutrum consequat. Mauris dictum facilisis augue. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim.</p>
+
+                <p>Etiam egestas wisi a erat. Fusce suscipit libero eget elit. Praesent in mauris eu tortor porttitor accumsan. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Integer rutrum, orci vestibulum ullamcorper ultricies, lacus quam ultricies odio, vitae placerat pede sem sit amet enim. Ut tempus purus at lorem. Praesent in mauris eu tortor porttitor accumsan. Integer malesuada. Aliquam in lorem sit amet leo accumsan lacinia. Maecenas sollicitudin. Vivamus ac leo pretium faucibus. Aliquam erat volutpat. Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam erat volutpat.</p>
+
+                <p>Maecenas libero. Aliquam erat volutpat. Nullam rhoncus aliquam metus. Quisque tincidunt scelerisque libero. Nullam dapibus fermentum ipsum. Integer imperdiet lectus quis justo. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Vivamus ac leo pretium faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Nullam faucibus mi quis velit. Fusce aliquam vestibulum ipsum. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Integer vulputate sem a nibh rutrum consequat. In rutrum.</p>
+
+                <p>Duis bibendum, lectus ut viverra rhoncus, dolor nunc faucibus libero, eget facilisis enim ipsum id lacus. Aliquam in lorem sit amet leo accumsan lacinia. Nulla accumsan, elit sit amet varius semper, nulla mauris mollis quam, tempor suscipit diam nulla vel leo. Ut tempus purus at lorem. Phasellus et lorem id felis nonummy placerat. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. In convallis. Aenean id metus id velit ullamcorper pulvinar. Vivamus ac leo pretium faucibus. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Morbi scelerisque luctus velit. Nunc dapibus tortor vel mi dapibus sollicitudin. Phasellus enim erat, vestibulum vel, aliquam a, posuere eu, velit. Curabitur vitae diam non enim vestibulum interdum. Aenean placerat. Integer malesuada. Praesent in mauris eu tortor porttitor accumsan.</p>
+
+                <p>Praesent id justo in neque elementum ultrices. Phasellus faucibus molestie nisl. Mauris dolor felis, sagittis at, luctus sed, aliquam non, tellus. Duis risus. Nullam dapibus fermentum ipsum. Etiam egestas wisi a erat. Nulla non arcu lacinia neque faucibus fringilla. Fusce nibh. Nullam sapien sem, ornare ac, nonummy non, lobortis a enim. Aliquam in lorem sit amet leo accumsan lacinia. Maecenas ipsum velit, consectetuer eu lobortis ut, dictum at dui. Fusce dui leo, imperdiet in, aliquam sit amet, feugiat eu, orci. Nulla non lectus sed nisl molestie malesuada. Proin pede metus, vulputate nec, fermentum fringilla, vehicula vitae, justo. Nullam at arcu a est sollicitudin euismod. Sed vel lectus. Donec odio tempus molestie, porttitor ut, iaculis quis, sem.</p>
+
+            </div>
+            
+    </div>
+
+
+</body>
+
+
+@section Scripts
+    {
+    
+    <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+    <script type="text/javascript">Loader.load();</script>
+    <script>
+        var currentLong;
+        var markers;
+        var vrstva = new SMap.Layer.Marker();
+        var type = "all";
+        var souradnice = [];
+        var currentLat;
+        var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+        var m = new SMap(JAK.gel("m"), center, 13);
+
+        m.addDefaultLayer(SMap.DEF_BASE).enable();
+        m.addDefaultControls();
+        var switchLayer = function(e, elm) {
+            switch (elm.selectedIndex) {
+                case 0: 
+                    type = "poloha";
+                    writeData();
+                break;
+                case 1: 
+                    type = "test";
+                    writeData();
+                break;
+                case 2: 
+                    layers[SMap.DEF_TURIST].enable();
+                break;
+                case 3: 
+                    layers[SMap.DEF_TURIST_WINTER].enable();
+                break;
+            }
+        }
+
+        var s = JAK.mel("select");
+        JAK.gel("controls").innerHTML = "Vyberte vrstvu: ";
+        JAK.gel("controls").appendChild(s);
+        var names = ["poloha", "test", "Turistická", "Zimní"]
+        for (var i=0; i<names.length; i++) {
+            var o = JAK.mel("option");
+            o.innerHTML = names[i];
+            s.appendChild(o);
+        }
+        var e = JAK.Events.addListener(s, "change", window, switchLayer);
+
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {}
+
+        function showPosition(position) {
+            currentLat = position.coords.latitude;
+            currentLong = position.coords.longitude;
+            writeData();
+        }
+
+        function writeData()
+        {
+            
+            vrstva.removeAll();
+            var png = "https://api.mapy.cz/img/api/marker/drop-red.png";
+            markers = [{
+                name: "Aktuální poloha",
+                id: "1",
+                type: "poloha",
+                longitude: currentLong,
+                latitude: currentLat
+            },{
+                name: "Test",
+                id: "2",
+                type: "test",
+                longitude: 14.02346,
+                latitude: 50.6597
+            }];
+            
+
+            markers.forEach(function (marker) {
+                    if(marker.type == type)
+                    {
+                    var c = SMap.Coords.fromWGS84(marker.longitude, marker.latitude);
+
+                    var options = {
+                        url: png,
+                        title: marker.name,
+                        anchor: { left: 10, bottom: 1 }
+                    }
+
+                    var znacka = new SMap.Marker(c, marker.id, options);
+                    souradnice.push(c);
+                    vrstva.addMarker(znacka);
+                }
+                });
+
+                m.addLayer(vrstva);
+                vrstva.enable();
+
+                var cz = m.computeCenterZoom(souradnice);
+                m.setCenterZoom(cz[0], cz[1]); 
+
+                m.getSignals().addListener(this, "marker-click", function (e) {
+                    var marker = e.target;
+                    var id = marker.getId();
+
+                    for (var i = 0; i < markers.length; i++) {
+                        if (markers[i].id == id && markers[i].type == type) {
+                            var obsah = document.getElementById("htmlInfo");
+                            obsah.innerHTML = markers[i].name;
+                            break;
+                        }
+                        
+                    }
+                });
+        }
+    </script>
+}

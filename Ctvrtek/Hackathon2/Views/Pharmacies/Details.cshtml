@@ -1,0 +1,152 @@
+﻿@model Hackathon2.Models.Pharmacies
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2 class="title is-info">@Html.DisplayFor(model => model.Name)</h2>
+<h3 class=""></h3>
+<hr>
+<div class="detail-container">
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pharmacist)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pharmacist)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PharmacyCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PharmacyCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ICZ)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ICZ)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PlaceCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PlaceCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PostCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PostCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Website)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Website)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+    </dl>
+    <div class="map-container">
+        <div id="map" class="map"></div>
+        <div class="hidden" style="visibility: hidden;" id="id">@Html.DisplayFor(model => model.Id)</div>
+    </div>
+</div>
+<div>
+    <a asp-action="Index" class="button is-info detail-button">Zpátky na seznam</a>
+</div>
+
+@section Scripts {
+    <script type="text/javascript">
+        let lat;
+        let lon;
+        const id = document.getElementById('id').innerHTML;
+        var iconFeatures=[];
+        fetch(`https://localhost:44329/Pharmacies/getpharmacy?id=${id}`).then(function(response) {
+            return response.json();
+        }).then((data)=>{
+            console.log(data);
+            return data;
+        }).then((data)=>{
+            let city = data.city.replace(/\s/g, "+");
+            let address = data.address.replace(/\s/g, "+");
+            //let number = data..replace(/\s/g, "+");
+            console.log(city + address);
+            fetch(`https://www.mapquestapi.com/geocoding/v1/address?key=wLlUK4ZgcsTnF5y7An6Z5BRiJc4ZoPU0&street=${address}&city=${city}`)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            lat = myJson.results[0].locations[0].latLng.lat;
+            lon = myJson.results[0].locations[0].latLng.lng;
+            console.log(lat);
+
+        })
+        .then(function(){
+            var iconFeature = new ol.Feature({
+            geometry: new ol.geom.Point(ol.proj.transform([lon, lat], 'EPSG:4326', 'EPSG:3857')),
+            name: 'Null Island'
+            });
+
+            iconFeatures.push(iconFeature);
+        }).then(()=>{
+            var iconStyle = new ol.style.Style({
+                image: new ol.style.Icon(({
+                anchor: [0.5, 40],
+                anchorXUnits: 'fraction',
+                anchorYUnits: 'pixels',
+                src: '/images/marker.png'
+                }))
+            });
+            //iconFeature.setStyle(iconStyle);
+
+            var vectorSource = new ol.source.Vector({
+                features: iconFeatures
+            });
+
+            var vectorLayer = new ol.layer.Vector({
+                source: vectorSource,
+                style: iconStyle
+            });
+
+            var map = new ol.Map({
+                target: 'map',
+                layers: [new ol.layer.Tile({ source: new ol.source.OSM() }), vectorLayer],
+                view: new ol.View({
+                    center: ol.proj.transform([lon, lat], 'EPSG:4326', 'EPSG:3857'),
+                    zoom: 12
+                })
+            });
+        });
+
+        
+        
+        })
+        
+        
+
+        </script>
+}

@@ -1,0 +1,100 @@
+body {
+    background-color: #f1f1f1;
+}
+
+.frame {
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto 400px;
+}
+
+.map {
+    width:100%;
+    height: 100%;
+}
+
+/* Sidemenu */
+.sidemenu {
+    background-color: white;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.data-set-menu .item{
+    border: 1px solid #FF9800;;
+    text-align: center;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 5px 0;
+    color: #FF9800;
+    cursor: pointer;
+}
+
+.data-set-menu .item:hover {
+    background-color: rgba(255, 152, 0, 0.3);
+    color: white;
+}
+
+.data-set-menu .item.active{
+    background-color: #FF9800;
+    color: white;
+}
+
+.autors {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-size: 15px;
+}
+
+.autors .team {
+    font-weight: 700;
+}
+
+.autors a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.legend .color {
+    background-color: coral;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.legend .text{ 
+    margin-left: 10px;
+    height: 20px; 
+    line-height: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.sidemenu a {
+    text-decoration: none;
+}
+
+.sidemenu .back {
+    font-weight: 400;
+    font-size: 14px;
+    text-align: right;
+    color: gray;
+}
+
+.sidemenu .back a {
+    color: inherit;
+}
+
+h3 {
+    margin-bottom: 9px;
+}
+
+.alert {
+    background-color: #e20000;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    display: none;
+}

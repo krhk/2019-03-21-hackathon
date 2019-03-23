@@ -1,0 +1,254 @@
+/*
+  name: Zkouška webu
+  description: Příprava na soutěž Hackatlon v Hradci Králové, konanou 21.3. 2019
+  autor: Ondřej Langr, Rostislav Rusz
+*/
+
+/*Font set styling - Start*/
+/*Font set styling - END*/
+
+/*
+  1 - header
+    a - nav
+  2 - container
+    a - main content
+    b - secondary content
+    c - admin content
+    d - images
+    e - maps
+  3 - footer
+*/
+/*----------------------------------------------------------------------------*/
+/*---styling start------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+/*--1-header--start-----------------------------------------------------------*/
+/*dropdown*/
+/* Dropdown Button */
+.dropdown {
+  margin: 20px;
+}
+
+.dropdown-menu {
+  max-height: 20rem;
+  overflow-y: auto;
+}
+/*-------------------*/
+    .parallax {
+      min-height: 75vh;
+    }
+    .blur {
+      min-height: 100%;
+      z-index: 1;
+    }
+    .parallax .nav {
+      z-index: 2;
+    }
+    .parallax .h1text {
+      z-index: 3;
+      position: absolute;
+      bottom: 25px;
+      color: white;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+    .parallax .filter {
+      filter: blur(3px);
+      -webkit-filter: blur(3px);
+    }
+    #cover {
+      position: absolute;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+    }
+  /*--1a-nav--start-------------------------------------------------------------*/
+    .open_menu {
+      position: fixed;
+      z-index: 10;
+      top: 10px;
+      right: 20px;
+      font-size: 2.5rem;
+      color: #f4f5f7;
+      cursor: pointer;
+    }
+    .sidenav {
+      height: 100%; /* 100% Full-height */
+      width: 290px; /* 0 width - change this with JavaScript */
+      display: none;
+      position: fixed; /* Stay in place */
+      z-index: 999; /* Stay on top */
+      top: 0; /* Stay at the top */
+      right: 0;
+      background-color: rgba(0,0,0,0.7); /* Black*/
+      overflow-x: hidden; /* Disable horizontal scroll */
+      padding-top: 60px; /* Place content 60px from the top */
+    }
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #cacaca;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidenav a:hover {
+      color: #f1f1f1;
+    }
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    .menu_hr {
+      border-top-width: 5px;
+      border-top-color: #818181;
+      width: 86%;
+    }
+
+  /*--1a-nav--end---------------------------------------------------------------*/
+/*--1-header--end-------------------------------------------------------------*/
+
+/*--2-container--start--------------------------------------------------------*/
+  /*--2a-main content--start----------------------------------------------------*/
+    .souhrn, .oznamy, .partner,.eq {
+      display: none!important;
+    }
+    .search_input {
+      width: 60vw;
+    margin: 0 auto;
+    }
+    body, .parallax .filter{
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed!important;
+      background-image: url("http://nasweb.jecool.net/data/images/vlkov_2018_krajina_3.jpg");
+    }
+    #main-content {
+      transition: margin-right .5s;
+      z-index: 1;
+    }
+    .btn {
+      color: #fff!important;
+    }
+  /*--2a-main content--end------------------------------------------------------*/
+  /*--2b-secondary content--start-----------------------------------------------*/
+    .search_content, .zastavky{
+      min-height: 500px;
+      background-color: #484848b0;
+      padding: 10px 20px;
+    }
+    .zastavky thead{
+      color: white;
+      border-bottom-style: solid;
+    }
+    .zastavky tbody{
+      color: #cccccc;
+    }
+    .zastavky table{
+      margin: auto;
+    }
+
+    .map_view {
+      padding: 30px 40px;
+    }
+    .col-12{
+      padding-left: 0px!important;
+      padding-right: 0px!important;
+    }
+    .form-row{
+      margin-right:0px!important;
+        margin-left:0px!important;
+    }
+  /*--2b-secondary content--end-------------------------------------------------*/
+  /*--2c-admin content--start---------------------------------------------------*/
+    .left_side_panel {
+      border-right: 3px solid gray;
+      overflow-y: auto;
+    }
+    .left_side_panel, .right_side_panel {
+      padding: 10px 25px;
+      height: 100%;
+    }
+    .login_wraper {
+      max-height: 620px;
+      background: white;
+      padding: 25px 30px;
+      margin: auto;
+      max-width: 50%;
+      border-radius: 10px;
+    }
+    .login_wraper input[type=text],input[type=password] {
+    background-color: rgba(0,0,0,0.05);
+    }
+    .admin_panel{
+      height: 60vh;
+      overflow: hidden;
+      margin: 0px!important;
+    }
+    #sett_admin_panel {
+      padding: 25px 20px;
+    }
+  /*--2c-admin content--end-----------------------------------------------------*/
+  /*--2d-images--start----------------------------------------------------------*/
+  /*--2d-images--end------------------------------------------------------------*/
+  /*--2e-maps--start------------------------------------------------------------*/
+  /*--2e-maps--end--------------------------------------------------------------*/
+/*--2-container--end----------------------------------------------------------*/
+
+/*--3-footer--start-----------------------------------------------------------*/
+header, footer{
+  -webkit-box-shadow: 0px 5px 27px 6px rgba(0, 0, 0, 0.40);
+  -moz-box-shadow: 0px 5px 27px 6px rgba(0, 0, 0, 0.40);
+  box-shadow: 0px 5px 27px 6px rgba(0, 0, 0, 0.40);
+}
+footer{
+  background-color: #252525;
+  width: 100%;
+  text-align: center;
+  margin: -16px 0px;
+  padding-bottom: 10px;
+  color: #808080;
+}
+#footer a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: white;
+  text-decoration: none!important;
+}
+footer a:before{
+  content: "";
+  position: absolute;
+  width: 100%;;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+footer a:hover:before{
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*--3-footer--end-------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/
+@media only screen and (max-width: 1100px) {
+.parallax .filter {
+  background-image: none!important;
+}
+}
+/*---styling end--------------------------------------------------------------*/
+/*----------------------------------------------------------------------------*/

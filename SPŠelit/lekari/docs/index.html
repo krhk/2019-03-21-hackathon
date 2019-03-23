@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>mattLib - Documentation</title>
+
+    <link rel="stylesheet" href="docs.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+            <h3>📃 mattLib Docs</h3>
+        </a>
+    </header>
+
+    <div class="wrapper">
+        <div class="container">
+
+            <section id="url">
+                <h2>URL 🔗</h2>
+
+                <p>
+                    mattLib has URL rewrite, you can specify routes in <samp class="file">routes.php</samp>
+                </p>
+
+                <code lang="php">
+                    <label>
+                        routes.php
+                    </label>
+
+                    $routes = [<br>
+                    <span class="tab" />"home" => "common/home"
+                    <br>];
+                </code>
+
+                <p>You can also specify URL variables :</p>
+
+                <code lang="php">
+                    <label>
+                        routes.php
+                    </label>
+
+                    $routes = [<br>
+                    <span class="tab" />"home/<b>:message</b>" => "common/home"
+                    <br>];
+                </code>
+
+                <p>Using URL variables :</p>
+
+                <code lang="php">
+                    <label>
+                        home.view.php
+                    </label>
+
+                    Your message is: &lt;?= $_url['<b>:message</b>'] ?&gt;
+                </code>
+
+                <p>You can make these variables non-optional by adding <kbd>*</kbd> :</p>
+
+                <code lang="php">
+                        <label>
+                            routes.php
+                        </label>
+    
+                        $routes = [<br>
+                        <span class="tab" />"home/:message<b>*</b>" => "common/home"
+                        <br>];
+                    </code>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

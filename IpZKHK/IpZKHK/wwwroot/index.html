@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./assets/main.css">
+    <link rel="stylesheet" href="./assets/index_page.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KHK - Informace pro život</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+</head>
+<body>
+    <div class="Obal">
+        <h1 class="nelze_vybrat">Informace pro život v Královehradeckém kraji</h1>
+        <form action=''>
+            <input id='x' class="Vyhledani_adresy" type='text' placeholder='Zadejte adresu' name='adresa'>
+            <input type="hidden" name="GpsLokace">
+        </form>
+        <div class="levo nelze_vybrat">
+            <p>Nebo použijte <b onclick="ZiskatLokaci()">aktuální lokaci</b></p>
+        </div>
+    </div>
+    <script>
+        var Sem = document.getElementById("x");
+
+        function ZiskatLokaci() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(ZapsatLokaci);
+            } else {
+                window.allert("Tento prohlížeč nepodporuje získání lokace.");
+            }
+        }
+
+        function ZapsatLokaci(pozice) {
+            Sem.value = pozice.coords.latitude + " " + pozice.coords.longitude;
+            console.log('{Latitude: ' + pozice.coords.latitude + ', Longitude: ' + pozice.coords.longitude + '}');
+            $.ajax({
+                type: 'POST',
+                url: '/api/GetMisto',
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: '{Latitude: ' + pozice.coords.latitude + ', Longitude: ' + pozice.coords.longitude + '}',
+                success: function(result) {
+                    console.log('Data received: ');
+                    console.log(result);
+                }
+            });
+            $.ajax({
+                type: 'POST',
+                url: '/api/GetSet?set=Kino',
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                data: '{Latitude: ' + pozice.coords.latitude + ', Longitude: ' + pozice.coords.longitude + '}',
+                success: function(result) {
+                    console.log('Data received: ');
+                    console.log(result);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

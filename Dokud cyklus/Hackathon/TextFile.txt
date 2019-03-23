@@ -1,0 +1,31 @@
+﻿using Csv;
+public string Api(string data)
+        {
+            if (data == "lps")
+            {
+                return StrData(new StreamReader("DataFiles/LPS.csv"));
+            }
+            if (data == "lssp")
+            {
+                return StrData(new StreamReader("DataFiles/LSSP.csv"));
+            }
+            if (data == "np")
+            {
+                return StrData(new StreamReader("DataFiles/Nasledna-Pece.csv"));
+            }
+            return "Bad Request";
+        }
+		string StrData(StreamReader sr)
+        {
+            List<dynamic> mylist = new List<dynamic>();
+            foreach (var line in CsvReader.Read(sr))
+            {
+                if (line.Index == 2)
+                {
+                    mylist.Add(line.Headers);
+                }
+                mylist.Add(line.Values);
+            }
+            string json = JsonConvert.SerializeObject(mylist);
+            return json;
+        }

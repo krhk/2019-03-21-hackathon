@@ -1,0 +1,349 @@
+﻿Resortní identifikátor školy,Kód sídla,Sídlo právnické osoby,Resortní identifikátor právnické osoby,Kód oboru vzdělání,Název oboru vzdělání
+    060884690,576361,Kostelec nad Orlicí,600012573,16-01-M/01,Ekologie a životní prostředí
+    060153296,579025,Trutnov,600012905,16-01-M/01,Ekologie a životní prostředí
+    015062848,569810,Hradec Králové,600011828,16-02-M/01,Průmyslová ekologie
+    015062848,569810,Hradec Králové,600011828,18-20-M/01,Informační technologie
+    000087513,572659,Jičín,600012000,18-20-M/01,Informační technologie
+    000087297,572659,Jičín,600012069,18-20-M/01,Informační technologie
+    060884711,576361,Kostelec nad Orlicí,600012581,18-20-M/01,Informační technologie
+    060884746,576271,Dobruška,600012590,18-20-M/01,Informační technologie
+    110037791,579203,Dvůr Králové nad Labem,600013006,18-20-M/01,Informační technologie
+    102730148,574279,Nové Město nad Metují,600024211,18-20-M/01,Informační technologie
+    110200403,579025,Trutnov,610200381,18-20-M/01,Informační technologie
+    102266271,573868,Náchod,691012415,18-20-M/01,Informační technologie
+    000087343,572926,Hořice,600012077,21-42-M/01,Geotechnika
+    000087343,572926,Hořice,600012077,21-42-M/01,Geotechnika
+    015062848,569810,Hradec Králové,600011828,23-41-M/01,Strojírenství
+    000087297,572659,Jičín,600012069,23-41-M/01,Strojírenství
+    102730148,574279,Nové Město nad Metují,600024211,23-41-M/01,Strojírenství
+    110200403,579025,Trutnov,610200381,23-41-M/01,Strojírenství
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-41-M/01,Strojírenství
+    110028881,574082,Hronov,691012431,23-41-M/01,Strojírenství
+    000087751,570508,Nový Bydžov,600011763,23-43-L/51,Provozní technika
+    015062848,569810,Hradec Králové,600011828,23-43-L/51,Provozní technika
+    015062848,569810,Hradec Králové,600011828,23-43-L/51,Provozní technika
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-43-L/51,Provozní technika
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-43-L/51,Provozní technika
+    015055663,573248,Nová Paka,691012512,23-43-L/51,Provozní technika
+    015062848,569810,Hradec Králové,600011828,23-44-L/01,Mechanik strojů a zařízení
+    102730148,574279,Nové Město nad Metují,600024211,23-44-L/01,Mechanik strojů a zařízení
+    015055663,573248,Nová Paka,691012512,23-44-L/01,Mechanik strojů a zařízení
+    015062848,569810,Hradec Králové,600011828,23-45-L/01,Mechanik seřizovač
+    102730148,574279,Nové Město nad Metují,600024211,23-45-L/01,Mechanik seřizovač
+    110028881,574082,Hronov,691012431,23-45-L/01,Mechanik seřizovač
+    000087751,570508,Nový Bydžov,600011763,23-45-M/01,Dopravní prostředky
+    000175790,569810,Hradec Králové,600170764,23-45-M/01,Dopravní prostředky
+    062690400,569810,Hradec Králové,600024024,23-51-E/01,Strojírenské práce
+    102730148,574279,Nové Město nad Metují,600024211,23-51-E/01,Strojírenské práce
+    015062848,569810,Hradec Králové,600011828,23-51-H/01,Strojní mechanik
+    000087297,572659,Jičín,600012069,23-51-H/01,Strojní mechanik
+    102730148,574279,Nové Město nad Metují,600024211,23-51-H/01,Strojní mechanik
+    110200403,579025,Trutnov,610200381,23-51-H/01,Strojní mechanik
+    015055663,573248,Nová Paka,691012512,23-51-H/01,Strojní mechanik
+    015055663,573248,Nová Paka,691012512,23-51-H/01,Strojní mechanik
+    015062848,569810,Hradec Králové,600011828,23-52-H/01,Nástrojař
+    110200403,579025,Trutnov,610200381,23-52-H/01,Nástrojař
+    110028881,574082,Hronov,691012431,23-52-H/01,Nástrojař
+    015055663,573248,Nová Paka,691012512,23-52-H/01,Nástrojař
+    000175790,569810,Hradec Králové,600170764,23-55-H/01,Klempíř
+    102266271,573868,Náchod,691012415,23-55-H/01,Klempíř
+    015062848,569810,Hradec Králové,600011828,23-55-H/02,Karosář
+    102730148,574279,Nové Město nad Metují,600024211,23-55-H/02,Karosář
+    000175790,569810,Hradec Králové,600170764,23-55-H/02,Karosář
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-55-H/02,Karosář
+    015055663,573248,Nová Paka,691012512,23-55-H/02,Karosář
+    015062848,569810,Hradec Králové,600011828,23-56-H/01,Obráběč kovů
+    000087297,572659,Jičín,600012069,23-56-H/01,Obráběč kovů
+    102730148,574279,Nové Město nad Metují,600024211,23-56-H/01,Obráběč kovů
+    110200039,572926,Hořice,691012458,23-56-H/01,Obráběč kovů
+    015055663,573248,Nová Paka,691012512,23-56-H/01,Obráběč kovů
+    000175790,569810,Hradec Králové,600170764,23-61-H/01,Autolakýrník
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-61-H/01,Autolakýrník
+    000087751,570508,Nový Bydžov,600011763,23-68-H/01,Mechanik opravář motorových vozidel
+    000175790,569810,Hradec Králové,600170764,23-68-H/01,Mechanik opravář motorových vozidel
+    060884720,576069,Rychnov nad Kněžnou,691000107,23-68-H/01,Mechanik opravář motorových vozidel
+    110028881,574082,Hronov,691012431,23-68-H/01,Mechanik opravář motorových vozidel
+    015062848,569810,Hradec Králové,600011828,26-41-L/01,Mechanik elektrotechnik
+    060884690,576361,Kostelec nad Orlicí,600012573,26-41-L/01,Mechanik elektrotechnik
+    102730148,574279,Nové Město nad Metují,600024211,26-41-L/01,Mechanik elektrotechnik
+    015055663,573248,Nová Paka,691012512,26-41-L/01,Mechanik elektrotechnik
+    060884690,576361,Kostelec nad Orlicí,600012573,26-41-L/51,Mechanik elektrotechnik
+    015062848,569810,Hradec Králové,600011828,26-41-L/52,Provozní elektrotechnika
+    015062848,569810,Hradec Králové,600011828,26-41-L/52,Provozní elektrotechnika
+    015055663,573248,Nová Paka,691012512,26-41-L/52,Provozní elektrotechnika
+    015062848,569810,Hradec Králové,600011828,26-41-M/01,Elektrotechnika
+    000087297,572659,Jičín,600012069,26-41-M/01,Elektrotechnika
+    060884746,576271,Dobruška,600012590,26-41-M/01,Elektrotechnika
+    110200403,579025,Trutnov,610200381,26-41-M/01,Elektrotechnika
+    110028881,574082,Hronov,691012431,26-41-M/01,Elektrotechnika
+    015055663,573248,Nová Paka,691012512,26-41-M/01,Elektrotechnika
+    015062848,569810,Hradec Králové,600011828,26-51-H/01,Elektrikář
+    015062848,569810,Hradec Králové,600011828,26-51-H/01,Elektrikář
+    110200403,579025,Trutnov,610200381,26-51-H/01,Elektrikář
+    110028881,574082,Hronov,691012431,26-51-H/01,Elektrikář
+    015055663,573248,Nová Paka,691012512,26-51-H/01,Elektrikář
+    000087751,570508,Nový Bydžov,600011763,26-51-H/02,Elektrikář - silnoproud
+    015062848,569810,Hradec Králové,600011828,26-51-H/02,Elektrikář - silnoproud
+    102730148,574279,Nové Město nad Metují,600024211,26-51-H/02,Elektrikář - silnoproud
+    110200403,579025,Trutnov,610200381,26-51-H/02,Elektrikář - silnoproud
+    015055663,573248,Nová Paka,691012512,26-51-H/02,Elektrikář - silnoproud
+    015062848,569810,Hradec Králové,600011828,26-52-H/01,Elektromechanik pro zařízení a přístroje
+    060884690,576361,Kostelec nad Orlicí,600012573,26-52-H/01,Elektromechanik pro zařízení a přístroje
+    000087751,570508,Nový Bydžov,600011763,26-57-H/01,Autoelektrikář
+    000175790,569810,Hradec Králové,600170764,26-57-H/01,Autoelektrikář
+    060884720,576069,Rychnov nad Kněžnou,691000107,26-57-H/01,Autoelektrikář
+    110037791,579203,Dvůr Králové nad Labem,600013006,28-44-M/01,Aplikovaná chemie
+    110028881,574082,Hronov,691012431,28-52-H/01,Chemik
+    110013450,569810,Hradec Králové,600024016,29-51-E/01,Potravinářská výroba
+    062690400,569810,Hradec Králové,600024024,29-51-E/01,Potravinářská výroba
+    102730148,574279,Nové Město nad Metují,600024211,29-51-E/01,Potravinářská výroba
+    062690400,569810,Hradec Králové,600024024,29-51-E/02,Potravinářské práce
+    102730148,574279,Nové Město nad Metují,600024211,29-51-E/02,Potravinářské práce
+    000527939,569810,Hradec Králové,600011712,29-53-H/01,Pekař
+    130001732,573248,Nová Paka,600170802,29-53-H/01,Pekař
+    000529681,579025,Trutnov,691012440,29-53-H/01,Pekař
+    000527939,569810,Hradec Králové,600011712,29-54-H/01,Cukrář
+    000087751,570508,Nový Bydžov,600011763,29-54-H/01,Cukrář
+    110013450,569810,Hradec Králové,600024016,29-54-H/01,Cukrář
+    102730148,574279,Nové Město nad Metují,600024211,29-54-H/01,Cukrář
+    130001732,573248,Nová Paka,600170802,29-54-H/01,Cukrář
+    000529681,579025,Trutnov,691012440,29-54-H/01,Cukrář
+    000087751,570508,Nový Bydžov,600011763,29-56-H/01,Řezník - uzenář
+    110028881,574082,Hronov,691012431,31-57-H/01,Výrobce textilií
+    130001732,573248,Nová Paka,600170802,31-58-H/01,Krejčí
+    102730148,574279,Nové Město nad Metují,600024211,31-59-E/02,Šití prádla
+    000087998,572926,Hořice,600024113,32-41-E/01,Kožedělná výroba
+    110100867,569810,Hradec Králové,600011747,33-42-L/51,Nábytkářská a dřevařská výroba
+    110013450,569810,Hradec Králové,600024016,33-42-L/51,Nábytkářská a dřevařská výroba
+    110100867,569810,Hradec Králové,600011747,33-42-M/01,Nábytkářská a dřevařská výroba
+    110013450,569810,Hradec Králové,600024016,33-56-E/01,Truhlářská a čalounická výroba
+    000087998,572926,Hořice,600024113,33-56-E/01,Truhlářská a čalounická výroba
+    060154021,579297,Hostinné,600024679,33-56-E/01,Truhlářská a čalounická výroba
+    110100867,569810,Hradec Králové,600011747,33-56-H/01,Truhlář
+    107860601,574121,Jaroměř,600012158,33-56-H/01,Truhlář
+    110013450,569810,Hradec Králové,600024016,33-56-H/01,Truhlář
+    102730148,574279,Nové Město nad Metují,600024211,33-56-H/01,Truhlář
+    130001732,573248,Nová Paka,600170802,33-56-H/01,Truhlář
+    060884720,576069,Rychnov nad Kněžnou,691000107,33-56-H/01,Truhlář
+    000529681,579025,Trutnov,691012440,33-56-H/01,Truhlář
+    102730148,574279,Nové Město nad Metují,600024211,33-57-E/01,Dřevařská výroba
+    060154021,579297,Hostinné,600024679,33-57-E/01,Dřevařská výroba
+    107860601,574121,Jaroměř,600012158,33-59-H/01,Čalouník
+    110028881,574082,Hronov,691012431,34-52-H/01,Tiskař na polygrafických strojích
+    110028881,574082,Hronov,691012431,34-52-L/01,Tiskař na polygrafických strojích
+    110028881,574082,Hronov,691012431,34-53-H/01,Reprodukční grafik
+    110013450,569810,Hradec Králové,600024016,34-53-L/01,Reprodukční grafik pro média
+    110028881,574082,Hronov,691012431,34-53-L/01,Reprodukční grafik pro média
+    000527939,569810,Hradec Králové,600011712,34-56-L/01,Fotograf
+    060154021,579297,Hostinné,600024679,34-57-E/01,Knihařské práce
+    000175790,569810,Hradec Králové,600170764,36-44-L/51,Stavební provoz
+    062690035,569810,Hradec Králové,600011658,36-45-M/01,Technická zařízení budov
+    062690035,569810,Hradec Králové,600011658,36-46-M/01,Geodézie a katastr nemovitostí
+    062690035,569810,Hradec Králové,600011658,36-47-M/01,Stavebnictví
+    102266271,573868,Náchod,691012415,36-47-M/01,Stavebnictví
+    000175790,569810,Hradec Králové,600170764,36-52-H/01,Instalatér
+    000529681,579025,Trutnov,691012440,36-52-H/01,Instalatér
+    060884720,576069,Rychnov nad Kněžnou,691000107,36-56-H/01,Kominík
+    000087998,572926,Hořice,600024113,36-57-E/01,Malířské a natěračské práce
+    062690400,569810,Hradec Králové,600024024,36-64-E/01,Tesařské práce
+    107860601,574121,Jaroměř,600012158,36-64-H/01,Tesař
+    000175790,569810,Hradec Králové,600170764,36-64-H/01,Tesař
+    102266271,573868,Náchod,691012415,36-64-H/01,Tesař
+    000529681,579025,Trutnov,691012440,36-64-H/01,Tesař
+    000175790,569810,Hradec Králové,600170764,36-66-H/01,Montér suchých staveb
+    102266271,573868,Náchod,691012415,36-66-H/01,Montér suchých staveb
+    062690400,569810,Hradec Králové,600024024,36-67-E/01,Zednické práce
+    000087998,572926,Hořice,600024113,36-67-E/01,Zednické práce
+    060154021,579297,Hostinné,600024679,36-67-E/01,Zednické práce
+    102730148,574279,Nové Město nad Metují,600024211,36-67-E/02,Stavební práce
+    000087998,572926,Hořice,600024113,36-67-H/01,Zedník
+    000175790,569810,Hradec Králové,600170764,36-67-H/01,Zedník
+    102266271,573868,Náchod,691012415,36-67-H/01,Zedník
+    000529681,579025,Trutnov,691012440,36-67-H/01,Zedník
+    110200039,572926,Hořice,691012458,36-67-H/01,Zedník
+    102266271,573868,Náchod,691012415,36-69-H/01,Pokrývač
+    000175790,569810,Hradec Králové,600170764,37-41-M/01,Provoz a ekonomika dopravy
+    000529681,579025,Trutnov,691012440,37-42-M/01,Logistické a finanční služby
+    000175790,569810,Hradec Králové,600170764,39-41-H/01,Malíř a lakýrník
+    102266271,573868,Náchod,691012415,39-41-H/01,Malíř a lakýrník
+    000175790,569810,Hradec Králové,600170764,39-41-L/01,Autotronik
+    060884720,576069,Rychnov nad Kněžnou,691000107,39-41-L/01,Autotronik
+    000175790,569810,Hradec Králové,600170764,39-41-L/02,Mechanik instalatérských a elektrotechnických zařízení
+    000175790,569810,Hradec Králové,600170764,39-41-L/51,Autotronik
+    060884690,576361,Kostelec nad Orlicí,600012573,41-41-M/01,Agropodnikání
+    110200039,572926,Hořice,691012458,41-41-M/01,Agropodnikání
+    000087629,573060,Kopidlno,600012018,41-43-M/01,Rybářství
+    000087629,573060,Kopidlno,600012018,41-44-L/51,Zahradnictví
+    000527939,569810,Hradec Králové,600011712,41-44-M/01,Zahradnictví
+    000087629,573060,Kopidlno,600012018,41-44-M/01,Zahradnictví
+    060153296,579025,Trutnov,600012905,41-45-M/01,Mechanizace a služby
+    060153296,579025,Trutnov,600012905,41-46-M/01,Lesnictví
+    060153296,579025,Trutnov,600012905,41-46-M/01,Lesnictví
+    000087998,572926,Hořice,600024113,41-51-E/01,Zemědělské práce
+    102730148,574279,Nové Město nad Metují,600024211,41-51-E/01,Zemědělské práce
+    060884690,576361,Kostelec nad Orlicí,600012573,41-51-H/01,Zemědělec - farmář
+    110200039,572926,Hořice,691012458,41-51-H/01,Zemědělec - farmář
+    000087629,573060,Kopidlno,600012018,41-52-E/01,Zahradnické práce
+    102730148,574279,Nové Město nad Metují,600024211,41-52-E/01,Zahradnické práce
+    000527939,569810,Hradec Králové,600011712,41-52-H/01,Zahradník
+    000087629,573060,Kopidlno,600012018,41-52-H/01,Zahradník
+    107860601,574121,Jaroměř,600012158,41-54-H/01,Podkovář a zemědělský kovář
+    102730148,574279,Nové Město nad Metují,600024211,41-55-E/01,Opravářské práce
+    000087751,570508,Nový Bydžov,600011763,41-55-H/01,Opravář zemědělských strojů
+    107860601,574121,Jaroměř,600012158,41-55-H/01,Opravář zemědělských strojů
+    110200039,572926,Hořice,691012458,41-55-H/01,Opravář zemědělských strojů
+    060153296,579025,Trutnov,600012905,41-56-H/01,Lesní mechanizátor
+    108007863,569810,Hradec Králové,600011801,43-41-M/01,Veterinářství
+    060153245,579858,Vrchlabí,600012891,53-41-H/01,Ošetřovatel
+    110200039,572926,Hořice,691012458,53-41-H/01,Ošetřovatel
+    110030591,569810,Hradec Králové,600019772,53-41-M/01,Zdravotnický asistent
+    110010264,579025,Trutnov,600019829,53-41-M/01,Zdravotnický asistent
+    110010264,579025,Trutnov,600019829,53-41-M/01,Zdravotnický asistent
+    110030591,569810,Hradec Králové,600019772,53-41-M/03,Praktická sestra
+    110010264,579025,Trutnov,600019829,53-41-M/03,Praktická sestra
+    110010264,579025,Trutnov,600019829,53-41-M/03,Praktická sestra
+    110030591,569810,Hradec Králové,600019772,53-43-M/01,Laboratorní asistent
+    110030591,569810,Hradec Králové,600019772,53-44-M/03,Asistent zubního technika
+    062690221,570508,Nový Bydžov,600011682,63-41-M/01,Ekonomika a podnikání
+    000527939,569810,Hradec Králové,600011712,63-41-M/01,Ekonomika a podnikání
+    110028881,574082,Hronov,691012431,63-41-M/01,Ekonomika a podnikání
+    062690221,570508,Nový Bydžov,600011682,63-41-M/02,Obchodní akademie
+    062690272,569810,Hradec Králové,600011739,63-41-M/02,Obchodní akademie
+    062690272,569810,Hradec Králové,600011739,63-41-M/02,Obchodní akademie
+    000087513,572659,Jičín,600012000,63-41-M/02,Obchodní akademie
+    060884711,576361,Kostelec nad Orlicí,600012581,63-41-M/02,Obchodní akademie
+    110010264,579025,Trutnov,600019829,63-41-M/02,Obchodní akademie
+    102266271,573868,Náchod,691012415,63-41-M/02,Obchodní akademie
+    110200039,572926,Hořice,691012458,63-41-M/02,Obchodní akademie
+    000527939,569810,Hradec Králové,600011712,64-41-L/51,Podnikání
+    000527939,569810,Hradec Králové,600011712,64-41-L/51,Podnikání
+    000087751,570508,Nový Bydžov,600011763,64-41-L/51,Podnikání
+    107860601,574121,Jaroměř,600012158,64-41-L/51,Podnikání
+    060884690,576361,Kostelec nad Orlicí,600012573,64-41-L/51,Podnikání
+    110013450,569810,Hradec Králové,600024016,64-41-L/51,Podnikání
+    102730148,574279,Nové Město nad Metují,600024211,64-41-L/51,Podnikání
+    130001732,573248,Nová Paka,600170802,64-41-L/51,Podnikání
+    130001732,573248,Nová Paka,600170802,64-41-L/51,Podnikání
+    110200403,579025,Trutnov,610200381,64-41-L/51,Podnikání
+    060884720,576069,Rychnov nad Kněžnou,691000107,64-41-L/51,Podnikání
+    110028881,574082,Hronov,691012431,64-41-L/51,Podnikání
+    110028881,574082,Hronov,691012431,64-41-L/51,Podnikání
+    110200039,572926,Hořice,691012458,64-41-L/51,Podnikání
+    102730148,574279,Nové Město nad Metují,600024211,65-41-L/01,Gastronomie
+    060884720,576069,Rychnov nad Kněžnou,691000107,65-41-L/01,Gastronomie
+    000529681,579025,Trutnov,691012440,65-41-L/51,Gastronomie
+    000529681,579025,Trutnov,691012440,65-41-L/51,Gastronomie
+    000527939,569810,Hradec Králové,600011712,65-42-M/01,Hotelnictví
+    110037791,579203,Dvůr Králové nad Labem,600013006,65-42-M/01,Hotelnictví
+    130001732,573248,Nová Paka,600170802,65-42-M/01,Hotelnictví
+    000529681,579025,Trutnov,691012440,65-42-M/01,Hotelnictví
+    110037791,579203,Dvůr Králové nad Labem,600013006,65-42-M/02,Cestovní ruch
+    110013450,569810,Hradec Králové,600024016,65-51-E/01,Stravovací a ubytovací služby
+    062690400,569810,Hradec Králové,600024024,65-51-E/01,Stravovací a ubytovací služby
+    102730148,574279,Nové Město nad Metují,600024211,65-51-E/01,Stravovací a ubytovací služby
+    060154021,579297,Hostinné,600024679,65-51-E/01,Stravovací a ubytovací služby
+    062690400,569810,Hradec Králové,600024024,65-51-E/02,Práce ve stravování
+    000527939,569810,Hradec Králové,600011712,65-51-H/01,Kuchař - číšník
+    000087751,570508,Nový Bydžov,600011763,65-51-H/01,Kuchař - číšník
+    110013450,569810,Hradec Králové,600024016,65-51-H/01,Kuchař - číšník
+    102730148,574279,Nové Město nad Metují,600024211,65-51-H/01,Kuchař - číšník
+    130001732,573248,Nová Paka,600170802,65-51-H/01,Kuchař - číšník
+    060884720,576069,Rychnov nad Kněžnou,691000107,65-51-H/01,Kuchař - číšník
+    000529681,579025,Trutnov,691012440,65-51-H/01,Kuchař - číšník
+    110200039,572926,Hořice,691012458,65-51-H/01,Kuchař - číšník
+    015055663,573248,Nová Paka,691012512,65-51-H/01,Kuchař - číšník
+    060884720,576069,Rychnov nad Kněžnou,691000107,66-41-L/01,Obchodník
+    062690400,569810,Hradec Králové,600024024,66-51-E/01,Prodavačské práce
+    102730148,574279,Nové Město nad Metují,600024211,66-51-E/01,Prodavačské práce
+    000527939,569810,Hradec Králové,600011712,66-51-H/01,Prodavač
+    060884720,576069,Rychnov nad Kněžnou,691000107,66-51-H/01,Prodavač
+    015055663,573248,Nová Paka,691012512,66-51-H/01,Prodavač
+    000527939,569810,Hradec Králové,600011712,66-52-H/01,Aranžér
+    110028881,574082,Hronov,691012431,66-52-H/01,Aranžér
+    060884720,576069,Rychnov nad Kněžnou,691000107,66-53-H/01,Operátor skladování
+    110037791,579203,Dvůr Králové nad Labem,600013006,68-42-M/01,Bezpečnostně právní činnost
+    062690272,569810,Hradec Králové,600011739,68-43-M/01,Veřejnosprávní činnost
+    110028881,574082,Hronov,691012431,68-43-M/01,Veřejnosprávní činnost
+    000527939,569810,Hradec Králové,600011712,69-41-L/01,Kosmetické služby
+    110037791,579203,Dvůr Králové nad Labem,600013006,69-41-L/01,Kosmetické služby
+    000527939,569810,Hradec Králové,600011712,69-51-H/01,Kadeřník
+    110037791,579203,Dvůr Králové nad Labem,600013006,69-51-H/01,Kadeřník
+    102730148,574279,Nové Město nad Metují,600024211,69-51-H/01,Kadeřník
+    110028881,574082,Hronov,691012431,69-51-H/01,Kadeřník
+    062690400,569810,Hradec Králové,600024024,69-54-E/01,Provozní služby
+    102730148,574279,Nové Město nad Metují,600024211,69-54-E/01,Provozní služby
+    060154021,579297,Hostinné,600024679,69-54-E/01,Provozní služby
+    015062848,569810,Hradec Králové,600011828,72-41-M/01,Informační služby
+    110013450,569810,Hradec Králové,600024016,75-31-M/005,Předškolní a mimoškolní pedagogika
+    000401170,573248,Nová Paka,600012026,75-31-M/01,Předškolní a mimoškolní pedagogika
+    110013450,569810,Hradec Králové,600024016,75-31-M/01,Předškolní a mimoškolní pedagogika
+    062690400,569810,Hradec Králové,600024024,75-41-E/01,Pečovatelské služby
+    000087998,572926,Hořice,600024113,75-41-E/01,Pečovatelské služby
+    102730148,574279,Nové Město nad Metují,600024211,75-41-E/01,Pečovatelské služby
+    062690272,569810,Hradec Králové,600011739,75-41-M/01,Sociální činnost
+    062690272,569810,Hradec Králové,600011739,75-41-M/01,Sociální činnost
+    060153245,579858,Vrchlabí,600012891,75-41-M/01,Sociální činnost
+    110200039,572926,Hořice,691012458,75-41-M/01,Sociální činnost
+    062690035,569810,Hradec Králové,600011658,78-42-M/01,Technické lyceum
+    102730148,574279,Nové Město nad Metují,600024211,78-42-M/01,Technické lyceum
+    062690272,569810,Hradec Králové,600011739,78-42-M/02,Ekonomické lyceum
+    060884711,576361,Kostelec nad Orlicí,600012581,78-42-M/02,Ekonomické lyceum
+    110030591,569810,Hradec Králové,600019772,78-42-M/04,Zdravotnické lyceum
+    110010264,579025,Trutnov,600019829,78-42-M/04,Zdravotnické lyceum
+    110200039,572926,Hořice,691012458,78-42-M/05,Přírodovědné lyceum
+    110013387,569810,Hradec Králové,600023974,78-62-C/01,Praktická škola jednoletá
+    181093626,573922,Broumov,600024121,78-62-C/01,Praktická škola jednoletá
+    181064197,574121,Jaroměř,600024164,78-62-C/01,Praktická škola jednoletá
+    181083787,573868,Náchod,600024245,78-62-C/01,Praktická škola jednoletá
+    181007304,576069,Rychnov nad Kněžnou,600024300,78-62-C/01,Praktická škola jednoletá
+    181031574,579025,Trutnov,600024610,78-62-C/01,Praktická škola jednoletá
+    060154021,579297,Hostinné,600024679,78-62-C/01,Praktická škola jednoletá
+    181064341,572659,Jičín,650067487,78-62-C/01,Praktická škola jednoletá
+    110013387,569810,Hradec Králové,600023974,78-62-C/02,Praktická škola dvouletá
+    000087998,572926,Hořice,600024113,78-62-C/02,Praktická škola dvouletá
+    181093626,573922,Broumov,600024121,78-62-C/02,Praktická škola dvouletá
+    102730148,574279,Nové Město nad Metují,600024211,78-62-C/02,Praktická škola dvouletá
+    181083787,573868,Náchod,600024245,78-62-C/02,Praktická škola dvouletá
+    181007304,576069,Rychnov nad Kněžnou,600024300,78-62-C/02,Praktická škola dvouletá
+    181031574,579025,Trutnov,600024610,78-62-C/02,Praktická škola dvouletá
+    108026761,579203,Dvůr Králové nad Labem,600024695,78-62-C/02,Praktická škola dvouletá
+    181064341,572659,Jičín,650067487,78-62-C/02,Praktická škola dvouletá
+    062690060,569810,Hradec Králové,600011674,79-41-K/41,Gymnázium
+    062690221,570508,Nový Bydžov,600011682,79-41-K/41,Gymnázium
+    000087131,572659,Jičín,600011992,79-41-K/41,Gymnázium
+    000401170,573248,Nová Paka,600012026,79-41-K/41,Gymnázium
+    102266239,573922,Broumov,600012107,79-41-K/41,Gymnázium
+    102266247,573868,Náchod,600012115,79-41-K/41,Gymnázium
+    102266255,574121,Jaroměř,600012123,79-41-K/41,Gymnázium
+    060884762,576271,Dobruška,600012549,79-41-K/41,Gymnázium
+    060884703,576069,Rychnov nad Kněžnou,600012557,79-41-K/41,Gymnázium
+    060153393,579203,Dvůr Králové nad Labem,600012867,79-41-K/41,Gymnázium
+    060153237,579025,Trutnov,600012875,79-41-K/41,Gymnázium
+    060153245,579858,Vrchlabí,600012891,79-41-K/41,Gymnázium
+    062690043,569810,Hradec Králové,600011666,79-41-K/61,Gymnázium
+    062690221,570508,Nový Bydžov,600011682,79-41-K/61,Gymnázium
+    000087131,572659,Jičín,600011992,79-41-K/61,Gymnázium
+    060153393,579203,Dvůr Králové nad Labem,600012867,79-41-K/61,Gymnázium
+    000401170,573248,Nová Paka,600012026,79-41-K/81,Gymnázium
+    102266239,573922,Broumov,600012107,79-41-K/81,Gymnázium
+    102266247,573868,Náchod,600012115,79-41-K/81,Gymnázium
+    102266255,574121,Jaroměř,600012123,79-41-K/81,Gymnázium
+    060884762,576271,Dobruška,600012549,79-41-K/81,Gymnázium
+    060884703,576069,Rychnov nad Kněžnou,600012557,79-41-K/81,Gymnázium
+    060153237,579025,Trutnov,600012875,79-41-K/81,Gymnázium
+    060153245,579858,Vrchlabí,600012891,79-41-K/81,Gymnázium
+    110200039,572926,Hořice,691012458,79-41-K/81,Gymnázium
+    000087343,572926,Hořice,600012077,82-41-M/01,Užitá malba
+    110100867,569810,Hradec Králové,600011747,82-41-M/04,Průmyslový design
+    110028881,574082,Hronov,691012431,82-41-M/05,Grafický design
+    110028881,574082,Hronov,691012431,82-41-M/07,Modelářství a návrhářství oděvů
+    110100867,569810,Hradec Králové,600011747,82-41-M/11,Design interiéru
+    000087343,572926,Hořice,600012077,82-41-M/16,Kamenosochařství
+    000087343,572926,Hořice,600012077,82-42-M/01,Konzervátorství a restaurátorství
+    015062848,569810,Hradec Králové,600011828,82-51-H/01,"Umělecký kovář a zámečník, pasíř"
+    107860601,574121,Jaroměř,600012158,82-51-H/01,"Umělecký kovář a zámečník, pasíř"
+    110100867,569810,Hradec Králové,600011747,82-51-H/02,Umělecký truhlář a řezbář
+    110013450,569810,Hradec Králové,600024016,82-51-H/02,Umělecký truhlář a řezbář
+    107860601,574121,Jaroměř,600012158,82-51-H/04,Umělecký keramik
+    110100867,569810,Hradec Králové,600011747,82-51-L/02,Uměleckořemeslné zpracování dřeva
+    110100867,569810,Hradec Králové,600011747,82-51-L/06,Uměleckořemeslná stavba hudebních nástrojů

@@ -1,0 +1,58 @@
+body, html {
+    background-image: url("../../img/main_img.png");
+    background-position: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FF9800;
+}
+
+.main-frame{
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.main-container {
+    width: 80%;
+    min-height: 100px;
+}
+
+.logo {
+    font-family: 'Baloo', cursive;
+    font-size: 50pt;
+}
+
+p {
+    font-size: 25pt;
+    width: 750px;
+}
+
+.align-right {
+    text-align: right;
+    width: 750px;
+}
+
+.big-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #F7931E;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0px 5px;
+    border: 0;
+    outline: 0;
+}
+
+.big-button:focus {
+    animation: bounceIn 1s ;
+}
+
+.big-button:disabled {
+    background-color: gray;
+    cursor: no-drop;
+    opacity: 0.4;
+}

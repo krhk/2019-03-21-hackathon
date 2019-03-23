@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hackathon</title>
+    <!-- My CSS library -->
+    <link rel="stylesheet" href="css/simple-grid.css">
+    <link rel="stylesheet" href="css/root.css">
+
+    <!-- CSS for this project -->
+    <link rel="stylesheet" href="css/search-page.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/filter-page.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- Fonts and icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
+</head>
+<body class="bg-light">
+
+<!-- Navigation -->
+<nav class="navigation bg-light">
+    <a href="#" class="menu-btn">MENU</a>
+    <div class="logo" style="flex-grow: 0">
+        <img src="./assets/logo.png" alt="">
+        <h1>NajdiDoktora.cz</h1>
+    </div>
+    <div class="menu" style="flex-grow: 8">
+        <a href="#">Vyhledávač</a>
+        <a href="#">O projektu</a>
+        <a href="#">Kontakt</a>
+        <a href="list.html" class="your-list">Váš seznam</a>
+    </div>
+</nav>
+<!-- End of navigation -->
+
+<!-- mainpage - searchpage -->
+<div class="main">
+    <div class="bg-layer"></div> <!-- BG black layer -->
+    <div class="container main-page">
+        <div class="row">
+            <div class="col-12 header-content">
+                <h1>Najděte si svého doktora v Královehradeckém kraji.</h1>
+                <!-- <?php echo["find doctor"] ?> -->
+
+                <div class="search-bar bg-light">
+                    <input type="text" name="" placeholder="Např.: Rychnov nad Kněžnou">
+                    <button class="search-bar-btn">Vyhledat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-down-icon">
+        <a href="#">Podrobnější vyhledávání</a>
+        <img src="./assets/angle-down.png" alt="">
+    </div>
+</div>
+<!-- end of mainpage -->
+
+<!-- Filter -->
+<div class="container">
+    <div class="row">
+        <div class="col-12 filter-page">
+            <h1>Podrobnější filtrované vyhledávání</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sunt laudantium incidunt iure error facilis voluptatibus doloribus quasi ipsa! At commodi voluptates itaque, quasi voluptatum porro modi rem soluta reiciendis.</p>
+
+            <div class="filter-bar">
+                <div class="data" data-child="typ-kliniky">
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                    Typ kliniky
+                </div>
+                <div class="data" data-child="pro-koho">
+                    Pro koho
+                    <input type="radio" value="pro-koho" name="filter" id="">
+                </div>
+                <div class="data" data-child="okres">
+                    Okres
+                    <input type="radio" value="okres" name="filter" id="">
+                </div>
+                <div class="data" data-child="obec">
+                    Obec
+                    <input type="radio" value="obec" name="filter" id="">
+                </div>
+
+                <button class="filter-btn">Aktivovat filtr</button>
+            </div>
+            <div class="filter-sub-bar typ-kliniky">
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+            </div>
+            <div class="filter-sub-bar pro-koho">
+                <div class="data">
+                    data2
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div> 
+            </div>
+            <div class="filter-sub-bar okres">
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+            </div>
+            <div class="filter-sub-bar obec">
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+                <div class="data">
+                    data
+                    <input type="radio" value="typ-kliniky" name="filter" id="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End of filter -->
+
+<!-- Footer -->
+<footer>
+    <p> Tato aplikace byla vytvořena jako soutěžní projekt do Hackathonu v Hradci Králové.</p>
+    <a href="http://www.kr-kralovehradecky.cz/scripts/detail.php?id=113285">Použitá otevřená data</a>
+</footer>
+<!-- End of footer-->
+
+<script src="js/jquery.min.js"></script>
+<script src="js/navbar.js"></script>
+<script src="js/main.js"></script>
+<script src="js/filter.js"></script>
+</body>
+</html>

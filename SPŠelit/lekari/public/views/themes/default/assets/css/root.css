@@ -1,0 +1,250 @@
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.375rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #0984e3;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-heavy {
+  font-weight: 700;
+}
+
+.bg-dark {
+  background: #011627;
+  color: #fff;
+}
+
+.bg-regular {
+  background: #022642;
+  color: #fff;
+}
+
+.bg-light {
+  background: #FDFFFC;
+  color: #000;
+}
+
+.bg-danger {
+  background: #E71D36;
+  color: #fff;
+}
+
+.bg-success {
+  background: #2EC4B6;
+  color: #fff;
+}
+
+.bg-warning {
+  background: #FF9F1C;
+  color: #fff;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.btn-large {
+  padding: 9px 18px;
+  font-size: 125%;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 100%;
+}
+
+.btn.bg-danger:hover {
+  background: #cc081f;
+}
+
+.btn.bg-warning:hover {
+  background: #f19008;
+}
+
+.btn.bg-success:hover {
+  background: #0faf9f;
+}
+
+.btn.bg-light:hover {
+  background: #e7e7e7;
+}
+
+.btn.bg-dark:hover {
+  background: #02111d;
+}
+
+input, textarea {
+  outline: 0;
+  width: 100%;
+  border: 1.7px solid transparent;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 10px;
+}
+
+input:focus, textarea:focus {
+  border: 1.7px solid #FF9F1C;
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  width: auto;
+}
+
+label {
+  margin-right: 10px;
+  text-align: right;
+  clear: both;
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.nice-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.nice-table td, .nice-table th {
+  padding: 8px;
+}
+
+.nice-table tr:nth-child(even), .nice-table tr:nth-child(odd) {
+  background-color: #f2f2f2;
+  color: #022642;
+}
+
+.nice-table tr:hover {
+  background-color: #ddd;
+}
+
+.nice-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background: #022642;
+  color: #fff;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.navigation .logo h1 {
+  font-size: 27px;
+  padding-left: 25px;
+}
+
+.navigation .menu {
+  text-align: right;
+  padding-right: 25px;
+}
+
+.navigation .menu a {
+  font-size: 1.15em;
+  display: inline-block;
+  margin: 10px 12px;
+}
+
+.navigation .menu a:hover {
+  color: #011627;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.navigation .menu-btn {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .navigation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navigation .menu {
+    text-align: center;
+    display: none;
+    padding-right: 0px;
+  }
+  .navigation .menu a {
+    display: block;
+  }
+  .navigation .menu-btn {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 5%;
+  }
+}
+/*# sourceMappingURL=root.css.map */

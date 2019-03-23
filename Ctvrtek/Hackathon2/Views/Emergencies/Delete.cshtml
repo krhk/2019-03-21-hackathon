@@ -1,0 +1,81 @@
+﻿@model Hackathon2.Models.Emergency
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Emergency</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Group)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Group)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OkresCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OkresCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OkresName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OkresName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ObecCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObecCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ObecName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ObecName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ProviderName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ProviderName)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AddressCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.OpenHours)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.OpenHours)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

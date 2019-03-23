@@ -1,0 +1,44 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  /* will cover the 100% of viewport */
+  height: 100%;
+  position: relative;
+}
+
+nav .logo img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin-left: 35px;
+}
+
+nav .logo h1 {
+  font-size: 1.7em;
+  color: #189ad3;
+  display: inline-block;
+  margin-left: -15px;
+}
+
+.your-list {
+  background: #c1f7ff;
+  color: #078fa7;
+  border-radius: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.your-list:hover {
+  background: #9ce9f5;
+  color: #0e8397 !important;
+}
+
+@media (max-width: 600px) {
+  nav .logo h1 {
+    display: none;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

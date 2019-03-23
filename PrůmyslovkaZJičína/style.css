@@ -1,0 +1,45 @@
+body {
+	background: #DDD;
+	padding: 0px;
+	margin: 0px;
+}
+
+header {
+	position: relative;
+	background: red;
+	height: auto;
+	width: 100%;
+	box-shadow: 0px 0px 10px black;
+}
+
+header h1 {
+	margin: 0 auto;
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	color: black;
+	height: 100%;
+}
+
+footer {
+	text-align: center;
+}
+
+#selectLanguage {
+	position: relative;
+	z-index: 2;
+	margin-left: auto;
+	width: 50px;
+}
+
+select {
+
+}
+
+@media (min-width: 1000px) {
+	header {
+		position: sticky;
+		top: 0px;
+	}
+}

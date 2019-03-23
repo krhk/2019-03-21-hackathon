@@ -1,0 +1,21 @@
+Mapa prodeje nemovitostí
+
+jedeme online:
+API: http://khk-api.grimir.cz/regions
+Webová vizualizace: http://khk.jetam.eu/
+
+Použité technologie:
+Node.js
+puppeteer
+
+Použité datové sady:
+Vlastní získané data nemovitostí na prodej (zveøejnìné v naší api)
+Kraje - data èeského rozhlasu
+nezamìstnanost - data èeského statistického úøadu
+
+Pokud chcete spustit je potreba nainstalovat npm, spustit npm install a 
+npm run prod
+
+Team: Delta Squat
+Vítek Falta,
+Matìj Pùhoný

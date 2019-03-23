@@ -1,0 +1,36 @@
+.Obal{
+    margin-top: 15%;
+width: 100%;
+height: auto;
+text-align: center;
+font-size: 14px;
+}
+
+h1{
+    font-size: 25px;
+}
+
+.Vyhledani_adresy{
+    width: 50%;
+    height: 35px;
+    padding: 5px;
+    padding-left: 50px; 
+    font-size: 20px;
+    border-radius: 15px;
+    border: 2px solid rgb(120, 120, 120);
+    background-image: url('./hledat_lupa.png');
+    background-position: 10px;
+    background-repeat: no-repeat;
+}
+.Vyhledani_adresy:focus{
+    border: 2px solid rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.levo{
+    float: left;
+    margin-left: 25%;
+    text-align: left;
+}
+.levo  b{
+    cursor: pointer;
+}

@@ -1,0 +1,73 @@
+.console-show {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    font-family: helvetica;
+    font-size: 10px;
+}
+
+.debug-console {
+    background-color: rgba(0, 0, 0, .9);
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-family: monospace;
+    display: none;
+}
+
+.debug-console .console-nav {
+    margin: -10px;
+    margin-bottom: 10px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    color: #000;
+    font-family: helvetica;
+    font-size: 10px;
+    cursor: row-resize;
+    font-weight: bold;
+}
+
+.debug-console .console-nav .console-close {
+    float: right;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.debug-console #console-out {
+    min-height: 30px;
+    max-height: 300px;
+    overflow-y: hidden;
+}
+
+.debug-console #console-in {
+    color: lime;
+}
+
+.debug-console #console-form {
+    padding: 0;
+    margin: 0;
+}
+
+.debug-console #console-input {
+    background: none;
+    border: none;
+    color: #fff;
+    outline: 0;
+    margin-left: 5px;
+    width: calc(100% - 2em);
+    font-family: monospace;
+    color: lime;
+}
+
+.console-error {
+    color: red;
+}

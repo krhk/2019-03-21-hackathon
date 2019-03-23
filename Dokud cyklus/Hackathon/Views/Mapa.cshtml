@@ -1,0 +1,61 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<body>
+        <div id="map" style="height:380px"></div>
+</body>
+
+
+<script>
+var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+var m = new SMap(JAK.gel("m"), center, 13);
+m.addDefaultLayer(SMap.DEF_BASE).enable();
+
+    
+/*    var center;
+    var map;
+    
+
+    //Aktuální poloha
+    if (navigator.geolocation) 
+        navigator.geolocation.getCurrentPosition(showPosition);    
+    function showPosition(position) 
+    {
+        //Vystøedìní mapy na aktuální polohu
+        center = SMap.Coords.fromWGS84(position.coords.longitude,position.coords.latitude);
+        map = new SMap(JAK.gel(map), center, 13);
+        map.addControl(new SMap.Control.Sync());
+        map.addDefaultLayer(SMap.DEF_BASE).enable();
+    }
+
+    function geocoding()
+    {
+
+    }
+
+
+
+
+    var znacka = JAK.mel("div");
+    var ico = {
+       red: JAK.mel("img", {src:SMap.CONFIG.img+"/img/icons/red.svg"}),
+       blue: JAK.mel("img", {src:SMap.CONFIG.img+"/img/icons/blue.svg"})
+    }
+    znacka.appendChild(ico.red);
+    var popisek = JAK.mel("div", {}, {position:"absolute", left:"0px", top:"2px", textAlign:"center", width:"22px", color:"white", fontWeight:"bold"});
+    popisek.innerHTML = "C";
+    znacka.appendChild(popisek);
+
+    var vrstva = new SMap.Layer.Marker();
+    m.addLayer(vrstva);
+    vrstva.enable();
+
+    var marker = new SMap.Marker(m.getCenter(), null, {url:znacka});
+    vrstva.addMarker(marker);    */
+    </script>

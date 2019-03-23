@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewData["Title"] = "Home Page";
+   
+}
+
+
+<body>
+    <div>
+            <div id="mapa" style="height:1px; width:100%;"></div>
+            
+    
+        </div>
+
+
+    </body>
+
+
+    @section Scripts
+        {
+
+        <script type="text/javascript" src="https://api.mapy.cz/loader.js"></script>
+        <script type="text/javascript">Loader.load();</script>
+<script>
+    var currHeight = window.innerHeight;
+
+            document.getElementById("mapa").style.height = parseInt(currHeight / 1.2) + "px";
+                        var souradnice = [];
+
+ window.onload = function(e){
+    var center = SMap.Coords.fromWGS84(14.41790, 50.12655);
+	console.log(center);
+    var m = new SMap(JAK.gel("mapa"), center, 10);
+    m.addDefaultLayer(SMap.DEF_BASE).enable();
+    m.addDefaultControls();	
+    var ico = {
+       green: JAK.mel("img", {src:"img/icons/green.png"}),
+       red: JAK.mel("img", {src:"img/icons/red.png"}),
+	   black: JAK.mel("img", {src:"img/icons/black.png"}),
+    }
+	var markers = [];
+	var hasici = new SMap.Layer.Marker();
+	var policie = new SMap.Layer.Marker();
+	function GetData(address,lay){
+        $.get(address, function (data) {
+            let dataObj = JSON.parse(JSON.stringify(data));
+			for (let i = 0; i < dataObj.length; i++) {
+			if(dataObj[i]["gps"] != ""){
+			let numbers = dataObj[i]["gps"].match(/\d+/g).map(Number);
+				let coordinates = SMap.Coords.fromWGS84(numbers[2]+","+numbers[3],numbers[0]+","+numbers[1] );
+				let marker = new SMap.Marker( coordinates,dataObj[i]["id"] /*,{url: JAK.mel("div").appendChild(ico.black), title: dataObj[i]["druhPracoviste"] }*/);
+				var desc = new SMap.Card();
+				desc.getHeader().innerHTML = "<strong>"+ dataObj[i]["druhPracoviste"]+ "</strong>";
+				desc.getBody().innerHTML = dataObj[i]["mesto"]+" "+dataObj[i]["ulice"]+" "+dataObj[i]["cisloPopisne"];
+				desc.getBody().style.margin = "5px 0px";
+				marker.decorate(SMap.Marker.Feature.Card, desc);
+				markers.push(marker);
+                souradnice.push(coordinates);
+			}
+				
+			}
+            var cz = m.computeCenterZoom(souradnice);
+            m.setCenterZoom(cz[0], cz[1]);
+
+			lay.addMarker(markers);
+			m.addLayer(lay);
+			lay.enable();
+        });
+    }
+	
+    GetData('/api/hasici',hasici);
+	GetData('/api/policie',policie);
+ }
+    </script>
+        
+    }
